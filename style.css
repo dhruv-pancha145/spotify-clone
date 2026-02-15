@@ -1,0 +1,618 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+
+  margin: 0;
+ background-color: #000;
+ color: #fff;
+ overflow: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: green;
+    height: 64px;
+}
+
+.main {
+  margin-top: 4rem;
+ display: flex;
+ height: calc(100vh - 64px);
+padding: 0.5rem;
+}
+
+.sidebar {
+      background-color: #000;
+      width: 340px;
+      border-radius: 1rem; /*1rem = 16px*/
+    margin-right: 0.5rem; 
+      border-right: 0.2px solid #1a1a1a;   
+} 
+
+.main_content {
+    overflow-y: auto;
+ background-color: #181818;
+ flex: 1; /*for ex - sidebar game etli space letu  hoy mane eni sivay ni biji space aapi do */ 
+  border-radius: 1rem; /*1rem = 16px*/
+  padding:0 1.5rem 6rem 0;
+
+}
+
+.music_player {
+ background-color: #000;
+ position: fixed;
+ bottom: 0;
+ height: 72px;
+ width: 100%;
+}
+
+.nav {
+     background-color: #121212;
+     border-radius: 1rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 100px;
+     padding: 0.5rem 0.75rem;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+      border-radius: 1rem;
+}
+
+/* navbar css code  */
+  .spotify-navbar {
+    position: fixed;
+    top: 0;
+  height: 64px;
+    left: 0;
+  right: 0;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-bottom: 0.2px solid #1a1a1a;
+  border-radius: 10px;
+}
+
+/* LEFT */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.spotify-logo {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.icon-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 350px;
+}
+
+/* CENTER */
+.nav-center {
+  flex: 1;
+  max-width: 520px;
+  background-color: #242424;
+  height: 46px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  margin: 0 2rem;
+  gap: 0.6rem;
+  margin-left: -80px;
+}
+
+.nav-center input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.shortcut {
+  background-color: #121212;
+  border: 1px solid #555;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.divider {
+  height: 22px;
+  width: 1px;
+  background-color: #555;
+  margin: 0 6px;
+}
+
+.library-icon {
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+/* RIGHT */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.premium-btn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.install-app {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.profile {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #1DB954;
+  color: #000;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(255, 252, 252, 0.8);
+}
+
+.spotify-logo {
+  height: 32px;      /* Spotify real size ke close */
+  width: auto;
+  cursor: pointer;
+}
+
+
+.nav-option {
+  line-height: 2.5rem;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+}
+
+
+.nav-option:hover {
+  opacity: 1;
+}
+
+.nav-option i {
+  font-size: 1.25rem; 
+}
+
+.nav-option a {
+  font-size: 1rem;
+}
+
+.library {
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lib-option img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.icons {
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-right: 0.5rem;
+}
+
+.icons:hover {
+  opacity: 0.95;
+
+}
+
+#expand {
+  margin-left: 8px;
+  font-size: 0.8rem;
+}
+
+.lib-boxs {
+  overflow: auto;
+}
+
+.box {
+height: 8rem;
+background-color: #232323;
+   border-radius: 0.75rem;
+   margin: 0.75rem 0 1.75rem 0;
+   padding: 0.5rem 1.25rem;
+}
+
+.box-p1 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.box-p2 {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+.badge {
+  background-color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: fit-content;
+
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  padding: 0.75rem 1rem;
+
+   background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.08)
+   
+  );
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  width: 100%;
+}
+
+.navi {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* badges ke beech space */
+}
+
+
+
+.nav-bagdes {
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  padding: 0.5rem 1.125rem;
+  border-radius: 50rem;
+
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+
+  cursor: pointer;
+  width: fit-content;
+}
+
+.nav-bagdes:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.nav-active {
+  font-size: 0.875rem;
+  font-weight: 400;
+
+  padding: 0.5rem 1.125rem;
+  border-radius: 50rem;
+
+  background: #ffffff;
+  color: #000000;
+
+  cursor: pointer;
+  width: fit-content;
+}
+
+.cards {
+padding-left: 1.5rem;
+}
+
+.card {
+  background-color: #232323;
+  width: 150px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-img {
+  width: 100%;
+   border-radius: 0.5rem;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-info {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* footer css  */
+
+.spotify-footer {
+  background-color: rgba(4, 4, 4, 0);
+  color: #b3b3b3;
+  padding: 4rem 6rem 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.footer-column h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.footer-column a {
+  display: block;
+  color: #b3b3b3;
+  text-decoration: none;
+  margin-bottom: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.footer-column a:hover {
+  color: #1db954;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons i {
+  width: 40px;
+  height: 40px;
+  background: #222;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.social-icons i:hover {
+  background: #1db954; /* Spotify green */
+}
+
+
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 2.5rem 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+}
+
+.bottom-links a {
+  margin-right: 1rem;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.bottom-links a:hover {
+  color: #1db954;
+}
+
+.music_player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.album {
+  width: 25%;
+
+
+}
+
+.player {
+  width: 50%;
+  /* background-color: orange; */
+}
+
+.controls {
+  width: 25%;
+
+}
+
+.player-controls {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.player-control-icon {
+  height: 1rem;
+ margin-right: 1.7rem;
+ opacity: 0.7;
+}
+
+.player-control-icon:hover {
+  opacity: 1;
+}
+
+.playback-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.progress-bar {
+  width: 70%;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+    
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+   background-color: #ddd;
+   border-radius: 100px;
+   height: 0.175rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+ height: 1rem;
+ width: 1rem;
+ background-color: #1db760;
+ border-radius: 50%;
+ margin-top: -7px;
+}
+
+/* alumb css */
+
+.album {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 10px;
+}
+
+.album img:first-child {
+  width: 50px;
+  height: 50px;
+}
+
+#second {
+  width: 25px;
+  height: 25px;
+}
+
+.album-text p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 14px;
+  font-size: 0.6rem;
+}
+
+/* 👇 Daylight ke niche simple line */
+.album-text p:first-child {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-bottom: 2px;
+}
+
+/* controls css */
+
+/* RIGHT CONTROLS */
+.controls {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  padding-right: 15px;
+}
+
+/* ICONS – same height width */
+.controls img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.controls img:hover {
+  opacity: 1;
+}
+
+/* VOLUME BAR */
+.controls input[type="range"] {
+  width: 90px;
+  height: 4px;
+  cursor: pointer;
+}
+
+#img1 {
+   height: 40px;
+   width: 40px;
+   
+}
+
+#img2 {
+   height: 40px;
+   width: 40px;
+   margin-left: -5px;
+}
+
+#img3 {
+   height: 40px;
+   width: 40px;
+}

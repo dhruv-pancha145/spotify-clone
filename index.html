@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="icon" href="assets/icons/logo.png" />
+        <title>Spotify - Web Player: Music for everyone</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+      <div class="spotify-navbar">
+  <!-- LEFT -->
+<div class="nav-left">
+<img src="assets/icons/logo.png" class="spotify-logo" alt="Spotify">
+
+  <div class="icon-circle">
+   <i class="fa-regular fa-house" style="color: #ffffff;" id="house"></i>
+  </div>
+</div>
+
+
+  <!-- CENTER -->
+  <div class="nav-center">
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+    <input type="text" placeholder="What do you want to play?" />
+
+    <div class="shortcut">Ctrl</div>
+    <div class="shortcut">K</div>
+
+    <div class="divider"></div>
+
+    <i class="fa-solid fa-layer-group library-icon"></i>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="nav-right">
+    <button class="premium-btn">Explore Premium</button>
+
+    <div class="install-app">
+<img src="assets/icons/download.png" class="spotify-install" alt="install">
+      <span style="color: white;">Install App</span>
+    </div>
+
+    <i class="fa-solid fa-bell" style="color: #ffffff;"></i>
+   <i class="fa-solid fa-user-group" style="color: #ffffff;"></i>
+
+    <div class="profile">A</div>
+  </div>
+
+</div>
+
+    <div class="main">
+
+    
+
+     
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                  <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                 <div class="nav-option">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+              <div class="options">
+                  <div class="lib-option nav-option">
+                  <img src="assets/icons/library_icon.png" />
+                    <a href="#">Your Library</a>
+                </div>
+                <div class="icons">
+                  <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                  <a href="#">Create</a>
+                  <i class="fa-solid fa-up-right-and-down-left-from-center" style="color: #ffffff;" id="expand"></i>
+                </div>
+              </div>
+              <div class="lib-boxs">
+                   <div class="box">
+                    <p class="box-p1">Create your frist playlist</p>
+                    <p class="box-p2">it's eacy will help you</p>
+                    <button class="badge">Create playlist</button>
+                   </div>
+                     <div class="box">
+                    <p class="box-p1">Let's find some podcasts to follow</p>
+                    <p class="box-p2">wre'll keep you on new episodes</p>
+                    <button class="badge">Browse podcasts</button>
+                   </div>
+              </div>
+            </div>
+        </div>
+        <div class="main_content">
+          <div class="sticky-nav">
+            <div class="navi">
+              <span class="nav-active">All</span>
+                            <span class="nav-bagdes">Music</span>
+                                          <span class="nav-bagdes">Podcasts</span>
+
+            </div>
+          </div>
+          <div class="cards">
+
+
+            <h2>Recommended for you</h2>
+            <div class="cards-container">
+
+              <div class="card">
+                <img src="assets/images/card2_1.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+             
+              <div class="card">
+                <img src="assets/images/card_2.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+             <div class="card">
+                <img src="assets/images/card_3.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card_4.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+                <div class="card">
+                <img src="assets/images/extra_1.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              </div>
+
+              <h2>Charts</h2>
+            <div class="cards-container">
+
+              <div class="card">
+                <img src="assets/images/card2_1.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card2_2.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card2_3.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/cardd2_4.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+                <div class="card">
+                <img src="assets/images/extra_2.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+
+              <div class="card">
+                <img src="assets/images/card3_1.jpg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card3_2.jpg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card3_4.jpg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card_3.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+                <div class="card">
+                <img src="assets/images/extra_3.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+            </div>
+
+            <h2>Episodes you might like</h2>
+            <div class="cards-container">
+
+              <div class="card">
+                <img src="assets/images/card4_1.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card4_2.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card4_3.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card4_4.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+                <div class="card">
+                <img src="assets/images/extra_4.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+            </div>
+
+            <h2>Soundtrack your resolutions 2026</h2>
+            <div class="cards-container">
+
+              <div class="card">
+                <img src="assets/images/card5_1.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card5_2.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card5_3.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card5_4.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+                <div class="card">
+                <img src="assets/images/extra_5.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+            </div>
+
+            <h2>Shows to try</h2>
+            <div class="cards-container">
+
+              <div class="card">
+                <img src="assets/images/card6_1.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card6_2.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card6_3.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card6_4.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+                <div class="card">
+                <img src="assets/images/card6img.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+            </div>
+
+            <h2>Best episodes of the week</h2>
+            <div class="cards-container">
+
+              <div class="card">
+                <img src="assets/images/extra_7.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card2img.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card3img.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+              <div class="card">
+                <img src="assets/images/card4img.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+                <div class="card">
+                <img src="assets/images/card5img.jpeg" class="card-img"/>
+                <p class="card-title">Best of Bollywood Mush 2025</p>
+                <p class="card-info">Editor's pick the best love...</p>
+              </div>
+
+            </div>
+
+            
+          </div>    
+            <hr />
+          <!-- FOOTER START -->
+          <footer class="spotify-footer">
+            <div class="footer-top">
+
+              <div class="footer-column">
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Jobs</a>
+                <a href="#">For the Record</a>
+              </div>
+
+              <div class="footer-column">
+                <h4>Communities</h4>
+                <a href="#">For Artists</a>
+                <a href="#">Developers</a>
+                <a href="#">Advertising</a>
+                <a href="#">Investors</a>
+                <a href="#">Vendors</a>
+              </div>
+
+              <div class="footer-column">
+                <h4>Useful links</h4>
+                <a href="#">Support</a>
+                <a href="#">Free Mobile App</a>
+                <a href="#">Popular by Country</a>
+                <a href="#">Import your music</a>
+              </div>
+
+              <div class="footer-column">
+                <h4>Spotify Plans</h4>
+                <a href="#">Premium Lite</a>
+                <a href="#">Premium</a>
+                <a href="#">Premium Platinum</a>
+                <a href="#">Premium Student</a>
+                <a href="#">Spotify Free</a>
+              </div>
+
+              <div class="social-icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+
+            </div>
+            <hr  id="hr"/>
+            <div class="footer-bottom">
+              <div class="bottom-links">
+                <a href="#">Legal</a>
+                <a href="#">Safety & Privacy Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookies</a>
+                <a href="#">About Ads</a>
+                <a href="#">Accessibility</a>
+              </div>
+              <p>© 2026 Spotify AB</p>
+            </div>
+          </footer>
+          
+          <!-- FOOTER END -->          
+        </div>
+        <div class="music_player">
+          <div class="album">
+              <img  src="assets/images/album_picture.jpeg"/>
+              <div class="album-text">
+                 <p>Daylight</p>
+                     <p>David Kushner</p>
+                                      </div>
+            <img src="assets/icons/album_icon1.png"/>
+                        <img src="assets/icons/album_icon2.png" id="second"/>
+          </div>
+          <div class="player">
+            <div class="player-controls">
+              <img src="assets/icons/player_icon1.png" class="player-control-icon"/>
+               <img src="assets/icons/player_icon2.png" class="player-control-icon"/>
+                <img src="assets/icons/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;"/>
+                 <img src="assets/icons/player_icon4.png" class="player-control-icon"/>
+                  <img src="assets/icons/player_icon5.png" class="player-control-icon"/>
+            </div>
+            <div class="playback-bar">
+              <span class="curr-time">00:00</span>
+              <input type="range" min="0" max="100" class="progress-bar" value="1">
+              <span class="tol-time">03:33</span>
+            </div>
+          </div>
+          <div class="controls">
+            <img src="assets/icons/controls_icon1.png" id="img1"/>
+            <img src="assets/icons/controld_icon2.png" id="img2"/>
+            <img src="assets/icons/controls_icon3.png"/>
+            <img src="assets/icons/controls_icon4.png"/>
+            <img src="assets/icons/controls_icon5.png" id="img3"/>
+            <input type="range" min="" max="" value="1" />
+          </div>
+        </div>
+    </div>
+
+</body>
+</html>
